@@ -4,3 +4,4 @@ let lastName = "Sakthivel";
 let fullName = firstName + " " + lastName;
 
 console.log(fullName);
+FocusNavigationEvent;
