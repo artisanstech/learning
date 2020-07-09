@@ -1,1 +1,1 @@
-# learning
+# JS learning from Pluralsight
