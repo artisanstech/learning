@@ -1,3 +1,7 @@
-let amount = 123;
-amount = amount.toString();
-showMessage(amount);
+function getSecretCode(value) {
+  let code = value * 42;
+  return code;
+}
+
+let secretCode = getSecretCode(2);
+console.log(secretCode);
