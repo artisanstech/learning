@@ -1,6 +1,23 @@
-let firstName = "Gowtham";
-let lastName = "Sakthivel";
+const contractEventNotifier = (store) => (next) => (action) => {
+  if (action.type === EventActions.EVENT_FIRED) {
+    const contract = action.name;
+    const contractEvent = action.event.event;
+    const message = action.event.returnValues._message;
+    const display = `${contract}(${contractEvent}): ${message}`;
 
-let fullName = firstName + " " + lastName;
+    toast.success(display, { position: toast.POSITION.TOP_RIGHT });
+  }
+  return next(action);
+};
 
-console.log(fullName);
+const contractEventNotifier = (strore) => (next) => (action) => {
+  if (action.type === EventActions.EVENT_FIRED) {
+    const contract = action.name;
+    const contractEvent = action.event.event;
+    const message = action.event.returnValues._message;
+    const display = `${contract}(${contractEvent}): ${message}`;
+
+    toast.success(display, { position: toast.POSITION.TOP_RIGHT });
+  }
+  return next(action);
+};
