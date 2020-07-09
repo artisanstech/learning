@@ -1,0 +1,28 @@
+{
+  "companyName": "ABC Pvt Ltd",
+  "companyNumber": 1234567890,
+  "noOfEmployees": 100,
+  "address": {
+    "registerdAddress": "3/16, Nehru Nagar, Madurai-625023",
+    "communicationAddress": "Flat 4, Raj Building, Chennai-600049"
+  },
+  "contactNumber": 9798462535,
+  "employeeDetails": [
+    {
+      "empId": 273175,
+      "empName": "Gowtham",
+      "phoneNumber": 9791677554,
+      "department": "Human Resource",
+      "salary": 12000,
+      "salaryCredit": "monthly",
+      "employementStauts": {
+        "active": true,
+        "inActive": false
+      },
+      "address": "123 Main St, Chennai - 600023",
+      "bankAccountNumber": 65412542656566,
+      "bankName": "SBI Bank Ltd"
+    }
+  ],
+  "companyProfit": 26656562356
+}
