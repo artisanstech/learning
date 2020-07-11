@@ -1,15 +1,5 @@
-let key = 42;
+const button = document.getElementById("see-review");
 
-function getSecretCode(value) {
-  let keyGenerator = function () {
-    let key = 12;
-    console.log("in keygenerator: ", key);
-    return key;
-  };
-  let code = value * keyGenerator();
-  console.log("in getSecretCode: ", key);
-  return code;
-}
-
-let secretCode = getSecretCode(2);
-console.log(secretCode);
+button.addEventListener("click", function () {
+  console.log("click");
+});
