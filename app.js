@@ -1,5 +1,8 @@
-const button = document.getElementById("see-review");
-
-button.addEventListener("click", function () {
-  console.log("click");
-});
+function continueSample() {
+  for (const item of _products) {
+    if (item.standardCost > 1000) {
+      continue;
+    }
+    console.log(JSON.stringify(item));
+  }
+}
